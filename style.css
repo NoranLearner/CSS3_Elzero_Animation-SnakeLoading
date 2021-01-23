@@ -1,0 +1,179 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.loading {
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.loading span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #3498DB;
+    opacity: .5s;
+    -webkit-animation: snake 1.5s infinite ease-in-out;
+    -moz-animation: snake 1.5s infinite ease-in-out;
+    -o-animation: snake 1.5s infinite ease-in-out;
+    animation: snake 1.5s infinite ease-in-out
+}
+
+.loading span:nth-of-type(2) {
+    left: 20px;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -o-animation-delay: .2s;
+    animation-delay: .2s
+}
+
+.loading span:nth-of-type(3) {
+    left: 40px;
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    animation-delay: .4s
+}
+
+.loading span:nth-of-type(4) {
+    left: 60px;
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    animation-delay: .6s
+}
+
+.loading span:last-of-type {
+    left: 80px;
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -o-animation-delay: .8s;
+    animation-delay: .8s
+}
+
+@-webkit-keyframes snake {
+
+0%, 100% {
+    opacity: .3;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+    }
+
+50% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    background-color: #080;
+    -webkit-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05)
+    }
+
+}
+
+@-moz-keyframes snake {
+
+0%, 100% {
+    opacity: .3;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+    }
+
+50% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    background-color: #080;
+    -webkit-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05)
+    }
+
+}
+
+@-o-keyframes snake {
+
+0%, 100% {
+    opacity: .3;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+    }
+
+50% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    background-color: #080;
+    -webkit-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05)
+    }
+
+}
+
+@keyframes snake {
+
+0%, 100% {
+    opacity: .3;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+    }
+
+50% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    background-color: #080;
+    -webkit-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 3px rgba(0, 0, 0, 0.05)
+    }
+
+}
+
+
+
+
